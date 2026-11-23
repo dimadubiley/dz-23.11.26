@@ -1,0 +1,12 @@
+<!doctype html>
+<html lang="uk">
+<head><meta charset="utf-8"><title>Courses</title></head>
+<body>
+  <h1>Published courses</h1>
+  {% for course in courses %}
+    <p>{{ course.title }} — capacity: {{ course.capacity }}</p>
+  {% empty %}
+    <p>No published courses yet.</p>
+  {% endfor %}
+</body>
+</html>
